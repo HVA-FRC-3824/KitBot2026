@@ -12,8 +12,10 @@ namespace Constants
     constexpr auto RIGHT_MOTOR_2_CAN_ID = 21;
 
     constexpr auto INTAKE_FLYWHEEL_MOTOR_CAN_ID = 30;
-    constexpr auto INTAKE_OUTTAKE_MOTOR_CAN_ID = 31;
+    constexpr auto INTAKE_OUTTAKE_MOTOR_CAN_ID  = 31;
 
-    constexpr auto MAX_VOLTAGE          = 10.6_V;
+    constexpr auto SHOOT_VOLTAGE             = 10.6_V;
+    constexpr auto INTAKE_OUTTAKE_VOLTAGE    = 8_V;
+    constexpr auto INTAKING_FLYWHEEL_VOLTAGE = 4_V;
 
 }

@@ -5,6 +5,7 @@
 #include <frc2/command/InstantCommand.h>
 #include <frc2/command/RunCommand.h>
 #include <frc2/command/button/JoystickButton.h>
+#include <frc2/command/button/CommandXboxController.h>
 
 #include "commands/ChassisCommands.h"
 #include "commands/IntakeFlywheelCommands.h"
@@ -25,6 +26,4 @@ class RobotContainer
     frc::XboxController m_controller{0};
 
     frc::ChassisSpeeds m_chassisSpeeds;
-    
-    void ConfigureButtonBindings();
 };

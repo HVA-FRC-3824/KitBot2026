@@ -20,7 +20,7 @@ class Robot : public frc::TimedRobot
 
     void     TeleopPeriodic() override;
   private:
-    RobotContainer m_robotContainer{};
+    RobotContainer m_robotContainer;
 
 };
 

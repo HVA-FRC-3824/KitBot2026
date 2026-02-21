@@ -5,18 +5,19 @@
 #include "Robot.h"
 
 #pragma region Constructor
-Robot::Robot() 
+Robot::Robot() :
+  m_robotContainer{}
 {
-  // Constructor
 }
 #pragma endregion
 
 #pragma region TeleopPeriodic
 void Robot::TeleopPeriodic() 
 {
+  frc2::CommandScheduler::GetInstance().Run();
   m_robotContainer.Periodic();
 }
-
+#pragma endregion
 
 #ifndef RUNNING_FRC_TESTS
 int main() {
